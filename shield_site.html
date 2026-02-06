@@ -3,54 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Shield | Automated Protection</title>
+    <title>AI Shield | Genius Protection</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #020617; color: white; scroll-behavior: smooth; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
-        .shield-glow { box-shadow: 0 0 25px rgba(59, 130, 246, 0.5); }
-        .btn-green { background: #16a34a; box-shadow: 0 4px 15px rgba(22, 163, 74, 0.4); }
+        body { background-color: #030712; color: white; scroll-behavior: smooth; overflow-x: hidden; }
+        .genius-gradient { background: radial-gradient(circle at 50% -20%, #1e40af, transparent 50%); }
+        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.05); }
+        .glow-text { text-shadow: 0 0 15px rgba(59, 130, 246, 0.8); }
+        .card-hover:hover { transform: translateY(-10px); border-color: #3b82f6; box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.5); }
+        @keyframes pulse { 0% { opacity: 0.5; } 50% { opacity: 1; } 100% { opacity: 0.5; } }
+        .live-dot { height: 8px; width: 8px; background-color: #22c55e; border-radius: 50%; display: inline-block; animation: pulse 1.5s infinite; }
     </style>
 </head>
-<body class="font-sans">
+<body class="font-sans genius-gradient">
 
-    <nav class="p-5 flex justify-between items-center glass sticky top-0 z-50 border-b border-blue-900/50">
-        <h1 class="text-xl font-black tracking-tighter text-blue-500"><i class="fas fa-shield-alt mr-2"></i>DIGITAL SHIELD</h1>
-        <a href="https://wa.me/919074470648" class="text-[10px] bg-white text-black px-4 py-2 rounded-full font-bold">24/7 SUPPORT</a>
+    <nav class="p-6 flex justify-between items-center sticky top-0 z-50 glass border-b border-blue-500/20">
+        <div class="flex items-center gap-2">
+            <div class="bg-blue-600 p-2 rounded-lg"><i class="fas fa-robot text-white"></i></div>
+            <h1 class="text-xl font-black tracking-tighter">AI SHIELD</h1>
+        </div>
+        <a href="https://wa.me/919074470648" class="bg-blue-600 hover:bg-blue-700 px-5 py-2 rounded-xl text-xs font-bold transition-all shadow-lg shadow-blue-500/20">SUPPORT</a>
     </nav>
 
-    <div class="text-center py-16 px-6">
-        <span class="bg-blue-900/30 text-blue-400 text-[10px] font-bold px-3 py-1 rounded-full border border-blue-800 uppercase">Secure Payment Gateway</span>
-        <h2 class="text-4xl font-bold mt-4 mb-4 text-white">Fast & <span class="text-blue-500">Automatic</span></h2>
-        <p class="text-gray-400 text-sm max-w-xs mx-auto mb-8">Professional cyber protection. Activate your shield instantly after payment verification.</p>
-        <a href="#payment" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold shield-glow inline-block">Pay & Activate</a>
+    <div class="text-center pt-20 pb-12 px-6">
+        <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 px-4 py-1.5 rounded-full mb-6">
+            <span class="live-dot"></span>
+            <span class="text-[10px] font-bold text-green-500 tracking-widest uppercase">5,249 Users Secured Today</span>
+        </div>
+        <h2 class="text-5xl font-black mb-6 leading-tight">Your Digital Life.<br><span class="text-blue-500 glow-text italic">Secured & Automated.</span></h2>
+        <p class="text-gray-400 text-sm max-w-sm mx-auto mb-10 leading-relaxed">AI-powered protection for social media, YouTube, and UPI. One-click setup, lifetime peace of mind.</p>
+        
+        <div class="flex flex-col items-center gap-4">
+            <a href="#payment" class="bg-white text-black px-12 py-4 rounded-2xl font-black text-lg hover:scale-105 transition-transform duration-300">ACTIVATE NOW</a>
+            <p class="text-blue-400 font-bold text-xl">₹499 <span class="text-gray-600 line-through text-sm">₹1999</span></p>
+        </div>
     </div>
 
-    <div id="payment" class="max-w-[340px] mx-auto glass p-6 rounded-[2.5rem] mb-20 text-center border-t-4 border-blue-600">
-        <h3 class="text-xl font-bold mb-2">Scan to Pay</h3>
-        <p class="text-gray-400 text-[11px] mb-6">Payment verified via PhonePe/UPI</p>
-        
-        <div class="bg-white p-3 rounded-3xl mb-6 inline-block shadow-2xl">
-            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=9074470648@axl&pn=Digital%20Shield&cu=INR" alt="QR Code" class="w-44 h-44">
+    <div class="px-6 grid gap-4 max-w-lg mx-auto mb-20">
+        <div class="glass p-5 rounded-3xl flex items-start gap-4 card-hover transition-all">
+            <div class="bg-red-500/20 p-3 rounded-2xl text-red-500"><i class="fab fa-youtube text-2xl"></i></div>
+            <div>
+                <h4 class="font-bold">YouTube Genius Mode</h4>
+                <p class="text-[11px] text-gray-400">Zero Ads. Play in background. No subscription needed.</p>
+            </div>
         </div>
+        <div class="glass p-5 rounded-3xl flex items-start gap-4 card-hover transition-all">
+            <div class="bg-blue-500/20 p-3 rounded-2xl text-blue-500"><i class="fab fa-facebook text-2xl"></i></div>
+            <div>
+                <h4 class="font-bold">Social AI-Shield</h4>
+                <p class="text-[11px] text-gray-400">Anti-hack & auto-recovery for Instagram/FB/WA.</p>
+            </div>
+        </div>
+        <div class="glass p-5 rounded-3xl flex items-start gap-4 card-hover transition-all">
+            <div class="bg-yellow-500/20 p-3 rounded-2xl text-yellow-500"><i class="fas fa-phone-slash text-2xl"></i></div>
+            <div>
+                <h4 class="font-bold">Smart Call Blocker</h4>
+                <p class="text-[11px] text-gray-400">Blocks 99% of scam/fraud calls before they ring.</p>
+            </div>
+        </div>
+    </div>
 
-        <div class="bg-black/40 py-3 rounded-xl mb-8 border border-white/5 shadow-inner">
-            <p class="text-blue-400 font-mono text-sm font-bold tracking-wider">9074470648@axl</p>
-            <p class="text-[9px] text-gray-500 uppercase tracking-widest mt-1 font-bold text-white">Verified Merchant ID</p>
+    <div class="px-6 mb-20 overflow-x-auto">
+        <h3 class="text-center text-xs font-bold text-gray-500 tracking-[0.3em] uppercase mb-8">Trusted by Thousands</h3>
+        <div class="flex gap-4 w-[600px]">
+            <div class="glass p-6 rounded-3xl min-w-[280px]">
+                <div class="flex text-yellow-500 mb-3 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="text-xs italic text-gray-300">"Amazing! Mera hacked account 2 ghante mein wapas mil gaya."</p>
+                <p class="text-[10px] mt-4 font-bold text-blue-400">- Rahal S., Delhi</p>
+            </div>
+            <div class="glass p-6 rounded-3xl min-w-[280px]">
+                <div class="flex text-yellow-500 mb-3 text-xs"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p class="text-xs italic text-gray-300">"YouTube ads se itna pareshan tha, ye genius service ne life badal di."</p>
+                <p class="text-[10px] mt-4 font-bold text-blue-400">- Aman V., Mumbai</p>
+            </div>
         </div>
-        
-        <a href="https://wa.me/919074470648?text=Hello%20Digital%20Shield,%20maine%209074470648@axl%20par%20payment%20kar%20di%20hai.%20Kripya%20ise%20verify%20karke%20turant%20activation%20shuru%20karein." 
-           class="btn-green block w-full py-4 rounded-2xl font-bold text-white flex items-center justify-center gap-2 hover:scale-105 transition">
-           <i class="fab fa-whatsapp text-xl"></i>
-           Confirm Payment
+    </div>
+
+    <div id="payment" class="max-w-[340px] mx-auto glass p-8 rounded-[3rem] mb-20 text-center border-t-2 border-blue-500 shadow-2xl shadow-blue-500/10">
+        <h3 class="text-2xl font-black mb-6">Payment Info</h3>
+        <div class="bg-white p-4 rounded-[2rem] mb-6 inline-block">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=9074470648@axl&pn=Digital%20Shield&am=499&cu=INR" alt="QR Code" class="w-48 h-48">
+        </div>
+        <p class="text-blue-400 font-mono font-bold mb-8">9074470648@axl</p>
+        <a href="https://wa.me/919074470648?text=I%20want%20Genius%20Protection.%20Payment%20Done." 
+           class="block w-full bg-blue-600 py-4 rounded-2xl font-black text-white hover:bg-blue-700 transition shadow-lg shadow-blue-600/30">
+           CONFIRM ON WHATSAPP
         </a>
-        
-        <p class="mt-4 text-[10px] text-gray-500 italic">Auto-verification active. No manual receipt needed.</p>
     </div>
 
-    <footer class="pb-10 text-center">
-        <p class="text-gray-600 text-[9px] tracking-[0.3em] uppercase font-bold">&copy; 2026 Digital Shield Systems</p>
+    <footer class="pb-10 text-center text-gray-700 text-[10px] tracking-widest uppercase">
+        <p>&copy; 2026 AI SHIELD GENIUS • ALL RIGHTS RESERVED</p>
     </footer>
 
 </body>
